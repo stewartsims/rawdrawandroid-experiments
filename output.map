@@ -1,0 +1,759 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+native_window       0x8               /tmp/test-34e97b.o
+CNFGDialogColor     0x4               /tmp/test-34e97b.o
+CNFGPenX            0x4               /tmp/test-34e97b.o
+android_sdk_version
+                    0x4               /tmp/test-34e97b.o
+CNFGPenY            0x4               /tmp/test-34e97b.o
+egl_context         0x8               /tmp/test-34e97b.o
+egl_surface         0x8               /tmp/test-34e97b.o
+buttonstate         0x8               /tmp/test-34e97b.o
+egl_config          0x8               /tmp/test-34e97b.o
+CNFGVertDataV       0x18000           /tmp/test-34e97b.o
+gRDLastResizeH      0x4               /tmp/test-34e97b.o
+debugc              0x4               /tmp/test-34e97b.o
+debuga              0x4               /tmp/test-34e97b.o
+debugb              0x4               /tmp/test-34e97b.o
+CNFGLastColor       0x4               /tmp/test-34e97b.o
+lastkey             0x4               /tmp/test-34e97b.o
+gRDLastResizeW      0x4               /tmp/test-34e97b.o
+egl_display         0x8               /tmp/test-34e97b.o
+CNFGBGColor         0x4               /tmp/test-34e97b.o
+CNFGVertDataC       0x8000            /tmp/test-34e97b.o
+lastkeydown         0x4               /tmp/test-34e97b.o
+HandleWindowTermination
+                    0x8               /tmp/test-34e97b.o
+android_width       0x4               /tmp/test-34e97b.o
+CNFGVertPlace       0x4               /tmp/test-34e97b.o
+g_objRootView       0x8               /tmp/test-34e97b.o
+suspended           0x4               /tmp/test-34e97b.o
+gapp                0x8               /tmp/android_native_app_glue-d04a14.o
+android_height      0x4               /tmp/test-34e97b.o
+MyFunc              0x8               /tmp/test-34e97b.o
+debug_capture_thread
+                    0x8               /tmp/android_native_app_glue-d04a14.o
+HandleCustomEventCallback
+                    0x8               /tmp/test-34e97b.o
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ .text          0x0000000000000000        0x0 /tmp/test-34e97b.o
+ .text.CNFGSetVSync
+                0x0000000000000000       0x14 /tmp/test-34e97b.o
+ .text.CNFGSetupFullscreen
+                0x0000000000000000       0x1c /tmp/test-34e97b.o
+ .text.HandleButton
+                0x0000000000000000       0x44 /tmp/test-34e97b.o
+ .text.HandleMotion
+                0x0000000000000000       0x1c /tmp/test-34e97b.o
+ .text.android_permission_name
+                0x0000000000000000       0x6c /tmp/test-34e97b.o
+ .text.AndroidHasPermissions
+                0x0000000000000000      0x1e0 /tmp/test-34e97b.o
+ .text.AndroidRequestAppPermissions
+                0x0000000000000000      0x1f4 /tmp/test-34e97b.o
+ .text.CNFGDrawBox
+                0x0000000000000000       0xd0 /tmp/test-34e97b.o
+ .text.CNFGColor
+                0x0000000000000000        0xc /tmp/test-34e97b.o
+ .text.CNFGTackRectangle
+                0x0000000000000000       0x34 /tmp/test-34e97b.o
+ .text.CNFGGetTextExtents
+                0x0000000000000000       0x70 /tmp/test-34e97b.o
+ .text.CNFGTackPoly
+                0x0000000000000000      0x10c /tmp/test-34e97b.o
+ .text.CNFGSetLineWidth
+                0x0000000000000000       0x1c /tmp/test-34e97b.o
+ .text.CNFGDeleteTex
+                0x0000000000000000       0x28 /tmp/test-34e97b.o
+ .text.CNFGTexImage
+                0x0000000000000000       0xc8 /tmp/test-34e97b.o
+ .text.CNFGBlitTex
+                0x0000000000000000      0x164 /tmp/test-34e97b.o
+ .text.CNFGBlitImage
+                0x0000000000000000       0xd0 /tmp/test-34e97b.o
+ .text.CNFGUpdateScreenWithBitmap
+                0x0000000000000000       0x14 /tmp/test-34e97b.o
+ .text.CNFGFlushRender
+                0x0000000000000000       0x3c /tmp/test-34e97b.o
+ .text.tdIdentity
+                0x0000000000000000       0x2c /tmp/test-34e97b.o
+ .text.tdZero   0x0000000000000000       0x10 /tmp/test-34e97b.o
+ .text.tdTranslate
+                0x0000000000000000       0x64 /tmp/test-34e97b.o
+ .text.tdMultiply
+                0x0000000000000000       0x6c /tmp/test-34e97b.o
+ .text.tdScale  0x0000000000000000       0x4c /tmp/test-34e97b.o
+ .rodata.cst8   0x0000000000000000       0x38 /tmp/test-34e97b.o
+ .text.tdRotateAA
+                0x0000000000000000      0x130 /tmp/test-34e97b.o
+ .text.tdRotateQuat
+                0x0000000000000000       0xc0 /tmp/test-34e97b.o
+ .text.tdRotateEA
+                0x0000000000000000      0x150 /tmp/test-34e97b.o
+ .text.tdPrint  0x0000000000000000       0x74 /tmp/test-34e97b.o
+ .text.tdTransposeSelf
+                0x0000000000000000       0x34 /tmp/test-34e97b.o
+ .rodata.cst16  0x0000000000000000       0x10 /tmp/test-34e97b.o
+ .text.tdPerspective
+                0x0000000000000000       0xa4 /tmp/test-34e97b.o
+ .text.tdLookAt
+                0x0000000000000000      0x184 /tmp/test-34e97b.o
+ .text.tdCross  0x0000000000000000       0x40 /tmp/test-34e97b.o
+ .text.tdPTransform
+                0x0000000000000000       0x74 /tmp/test-34e97b.o
+ .text.tdVTransform
+                0x0000000000000000       0x68 /tmp/test-34e97b.o
+ .text.td4Transform
+                0x0000000000000000       0xa4 /tmp/test-34e97b.o
+ .text.td4RTransform
+                0x0000000000000000       0x3c /tmp/test-34e97b.o
+ .text.tdNormalizeSelf
+                0x0000000000000000       0x40 /tmp/test-34e97b.o
+ .text.tdDistance
+                0x0000000000000000       0x34 /tmp/test-34e97b.o
+ .text.tdDot    0x0000000000000000       0x28 /tmp/test-34e97b.o
+ .text.tdPush   0x0000000000000000       0x54 /tmp/test-34e97b.o
+ .text.tdPop    0x0000000000000000       0x40 /tmp/test-34e97b.o
+ .text.tdMode   0x0000000000000000       0x3c /tmp/test-34e97b.o
+ .text.tdSetViewport
+                0x0000000000000000       0x34 /tmp/test-34e97b.o
+ .text.tdFinalPoint
+                0x0000000000000000       0xcc /tmp/test-34e97b.o
+ .text.tdNoiseAt
+                0x0000000000000000       0x54 /tmp/test-34e97b.o
+ .text.tdFLerp  0x0000000000000000       0x5c /tmp/test-34e97b.o
+ .text.tdPerlin2D
+                0x0000000000000000      0x1f8 /tmp/test-34e97b.o
+ .text.WebViewCreate
+                0x0000000000000000      0x94c /tmp/test-34e97b.o
+ .text.WebViewGetProgress
+                0x0000000000000000       0xd8 /tmp/test-34e97b.o
+ .text.WebViewPostMessage
+                0x0000000000000000      0x38c /tmp/test-34e97b.o
+ .text.WebViewRequestRenderToCanvas
+                0x0000000000000000       0xcc /tmp/test-34e97b.o
+ .text.WebViewNativeGetPixels
+                0x0000000000000000      0x148 /tmp/test-34e97b.o
+ .text.WebViewExecuteJavascript
+                0x0000000000000000      0x10c /tmp/test-34e97b.o
+ .text.WebViewGetLastWindowTitle
+                0x0000000000000000      0x120 /tmp/test-34e97b.o
+ .text.HandleDestroy
+                0x0000000000000000       0x20 /tmp/test-34e97b.o
+ .text.HandleSuspend
+                0x0000000000000000       0x10 /tmp/test-34e97b.o
+ .text.HandleResume
+                0x0000000000000000        0xc /tmp/test-34e97b.o
+ .bss.CNFGLastCharacter
+                0x0000000000000000        0x4 /tmp/test-34e97b.o
+ .bss.CNFGLastScancode
+                0x0000000000000000        0x4 /tmp/test-34e97b.o
+ .rodata.CNFGBlitTex.tex_verts
+                0x0000000000000000        0xc /tmp/test-34e97b.o
+ .bss.gsMatricies
+                0x0000000000000000     0x1000 /tmp/test-34e97b.o
+ .data.gSMatrix
+                0x0000000000000000        0x8 /tmp/test-34e97b.o
+ .bss.gsMPlace  0x0000000000000000        0x8 /tmp/test-34e97b.o
+ .bss.gsMMode   0x0000000000000000        0x4 /tmp/test-34e97b.o
+ .bss.translateX
+                0x0000000000000000        0x4 /tmp/test-34e97b.o
+ .bss.translateY
+                0x0000000000000000        0x4 /tmp/test-34e97b.o
+ .bss.scaleX    0x0000000000000000        0x4 /tmp/test-34e97b.o
+ .bss.scaleY    0x0000000000000000        0x4 /tmp/test-34e97b.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/test-34e97b.o
+ .text          0x0000000000000000        0x0 /tmp/android_native_app_glue-d04a14.o
+ .text.app_dummy
+                0x0000000000000000        0x4 /tmp/android_native_app_glue-d04a14.o
+ .text.RunCallbackOnUIThread
+                0x0000000000000000       0x34 /tmp/android_native_app_glue-d04a14.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /tmp/android_native_app_glue-d04a14.o
+ .text          0x0000000000000000        0x0 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtend_so.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtend_so.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtend_so.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+LOAD /tmp/test-34e97b.o
+LOAD /tmp/android_native_app_glue-d04a14.o
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/30/libm.so
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/30/libGLESv3.so
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/30/libEGL.so
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/30/libandroid.so
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/30/liblog.so
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/30/libOpenSLES.so
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/libgcc.a
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/30/libcompiler_rt-extras.a
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/libgcc_real.a
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/30/libdl.so
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/30/libc.so
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/libgcc.a
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/30/libcompiler_rt-extras.a
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/libgcc_real.a
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/30/libdl.so
+LOAD /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtend_so.o
+                0x0000000000000190                . = (0x0 + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x0000000000000190       0x44
+ *(.gnu.hash)
+ .gnu.hash      0x0000000000000190       0x44 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+
+.dynsym         0x00000000000001d8      0xa50
+ *(.dynsym)
+ .dynsym        0x00000000000001d8      0xa50 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+
+.dynstr         0x0000000000000c28      0x6ad
+ *(.dynstr)
+ .dynstr        0x0000000000000c28      0x6ad /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+
+.gnu.version    0x00000000000012d6       0xdc
+ *(.gnu.version)
+ .gnu.version   0x00000000000012d6       0xdc /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+
+.gnu.version_d  0x00000000000013b8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000000013b8        0x0 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+
+.gnu.version_r  0x00000000000013b8       0x20
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000000013b8       0x20 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+
+.rela.dyn       0x00000000000013d8       0x90
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x00000000000013d8       0x18 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ .rela.data.gSMatrix
+                0x00000000000013f0        0x0 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x00000000000013f0       0x48 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x0000000000001438        0x0 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ .rela.fini_array.0
+                0x0000000000001438       0x18 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ .rela.fini_array
+                0x0000000000001450       0x18 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+
+.rela.plt       0x0000000000001468      0x918
+ *(.rela.plt)
+ .rela.plt      0x0000000000001468      0x918 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ *(.rela.iplt)
+
+.init
+ *(SORT(.init))
+
+.plt            0x0000000000001d80      0x630
+ *(.plt)
+ .plt           0x0000000000001d80      0x630 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ *(.iplt)
+
+.text           0x00000000000023b0     0x296c
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000000000023b0       0x48 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+                0x00000000000023bc                __emutls_unregister_key
+                0x00000000000023c4                __atexit_handler_wrapper
+                0x00000000000023d0                atexit
+                0x00000000000023ec                pthread_atfork
+ .text.CNFGSwapBuffers
+                0x00000000000023f8       0xf4 /tmp/test-34e97b.o
+                0x00000000000023f8                CNFGSwapBuffers
+ .text.CNFGInternalResize
+                0x00000000000024ec       0x8c /tmp/test-34e97b.o
+                0x00000000000024ec                CNFGInternalResize
+ .text.CNFGGetDimensions
+                0x0000000000002578       0x50 /tmp/test-34e97b.o
+                0x0000000000002578                CNFGGetDimensions
+ .text.CNFGSetup
+                0x00000000000025c8      0x354 /tmp/test-34e97b.o
+                0x00000000000025c8                CNFGSetup
+ .text.handle_input
+                0x000000000000291c      0x21c /tmp/test-34e97b.o
+                0x000000000000291c                handle_input
+ .text.AndroidGetUnicodeChar
+                0x0000000000002b38      0x138 /tmp/test-34e97b.o
+                0x0000000000002b38                AndroidGetUnicodeChar
+ .text.HandleKey
+                0x0000000000002c70       0x40 /tmp/test-34e97b.o
+                0x0000000000002c70                HandleKey
+ .text.CNFGHandleInput
+                0x0000000000002cb0       0x70 /tmp/test-34e97b.o
+                0x0000000000002cb0                CNFGHandleInput
+ .text.handle_cmd
+                0x0000000000002d20      0x160 /tmp/test-34e97b.o
+                0x0000000000002d20                handle_cmd
+ .text.android_main
+                0x0000000000002e80       0x78 /tmp/test-34e97b.o
+                0x0000000000002e80                android_main
+ .text.main     0x0000000000002ef8       0x88 /tmp/test-34e97b.o
+                0x0000000000002ef8                main
+ .text.AndroidMakeFullscreen
+                0x0000000000002f80      0x498 /tmp/test-34e97b.o
+                0x0000000000002f80                AndroidMakeFullscreen
+ .text.AndroidDisplayKeyboard
+                0x0000000000003418      0x310 /tmp/test-34e97b.o
+                0x0000000000003418                AndroidDisplayKeyboard
+ .text.AndroidSendToBack
+                0x0000000000003728       0xd8 /tmp/test-34e97b.o
+                0x0000000000003728                AndroidSendToBack
+ .text.CNFGTackSegment
+                0x0000000000003800       0xac /tmp/test-34e97b.o
+                0x0000000000003800                CNFGTackSegment
+ .text.CNFGDrawText
+                0x00000000000038ac      0x164 /tmp/test-34e97b.o
+                0x00000000000038ac                CNFGDrawText
+ .text.CNFGTackPixel
+                0x0000000000003a10       0x4c /tmp/test-34e97b.o
+                0x0000000000003a10                CNFGTackPixel
+ .text.EmitQuad
+                0x0000000000003a5c       0xd8 /tmp/test-34e97b.o
+ .text.CNFGGLInternalLoadShader
+                0x0000000000003b34      0x240 /tmp/test-34e97b.o
+                0x0000000000003b34                CNFGGLInternalLoadShader
+ .text.CNFGSetupBatchInternal
+                0x0000000000003d74      0x104 /tmp/test-34e97b.o
+                0x0000000000003d74                CNFGSetupBatchInternal
+ .text.CNFGEmitBackendTriangles
+                0x0000000000003e78       0xbc /tmp/test-34e97b.o
+                0x0000000000003e78                CNFGEmitBackendTriangles
+ .text.CNFGClearFrame
+                0x0000000000003f34       0x60 /tmp/test-34e97b.o
+                0x0000000000003f34                CNFGClearFrame
+ .text.android_app_read_cmd
+                0x0000000000003f94       0x60 /tmp/android_native_app_glue-d04a14.o
+                0x0000000000003f94                android_app_read_cmd
+ .text.free_saved_state
+                0x0000000000003ff4       0x3c /tmp/android_native_app_glue-d04a14.o
+ .text.android_app_pre_exec_cmd
+                0x0000000000004030      0x164 /tmp/android_native_app_glue-d04a14.o
+                0x0000000000004030                android_app_pre_exec_cmd
+ .text.android_app_post_exec_cmd
+                0x0000000000004194       0xa4 /tmp/android_native_app_glue-d04a14.o
+                0x0000000000004194                android_app_post_exec_cmd
+ .text.ANativeActivity_onCreate
+                0x0000000000004238      0x2c8 /tmp/android_native_app_glue-d04a14.o
+                0x0000000000004238                ANativeActivity_onCreate
+ .text.onDestroy
+                0x0000000000004500       0x9c /tmp/android_native_app_glue-d04a14.o
+ .text.onStart  0x000000000000459c       0x34 /tmp/android_native_app_glue-d04a14.o
+ .text.onResume
+                0x00000000000045d0       0x34 /tmp/android_native_app_glue-d04a14.o
+ .text.onSaveInstanceState
+                0x0000000000004604       0x9c /tmp/android_native_app_glue-d04a14.o
+ .text.onPause  0x00000000000046a0       0x34 /tmp/android_native_app_glue-d04a14.o
+ .text.onStop   0x00000000000046d4       0x34 /tmp/android_native_app_glue-d04a14.o
+ .text.onConfigurationChanged
+                0x0000000000004708       0x34 /tmp/android_native_app_glue-d04a14.o
+ .text.onLowMemory
+                0x000000000000473c       0x34 /tmp/android_native_app_glue-d04a14.o
+ .text.onWindowFocusChanged
+                0x0000000000004770       0x44 /tmp/android_native_app_glue-d04a14.o
+ .text.onNativeWindowCreated
+                0x00000000000047b4       0x3c /tmp/android_native_app_glue-d04a14.o
+ .text.onNativeWindowDestroyed
+                0x00000000000047f0       0x38 /tmp/android_native_app_glue-d04a14.o
+ .text.onInputQueueCreated
+                0x0000000000004828       0x3c /tmp/android_native_app_glue-d04a14.o
+ .text.onInputQueueDestroyed
+                0x0000000000004864       0x38 /tmp/android_native_app_glue-d04a14.o
+ .text.onNativeWindowRedrawNeeded
+                0x000000000000489c       0x18 /tmp/android_native_app_glue-d04a14.o
+ .text.android_app_write_cmd
+                0x00000000000048b4       0x5c /tmp/android_native_app_glue-d04a14.o
+ .text.android_app_set_activity_state
+                0x0000000000004910       0x70 /tmp/android_native_app_glue-d04a14.o
+ .text.android_app_set_window
+                0x0000000000004980       0x98 /tmp/android_native_app_glue-d04a14.o
+ .text.android_app_set_input
+                0x0000000000004a18       0x78 /tmp/android_native_app_glue-d04a14.o
+ .text.debug_capture_thread_fn
+                0x0000000000004a90       0x90 /tmp/android_native_app_glue-d04a14.o
+ .text.process_ui
+                0x0000000000004b20       0x3c /tmp/android_native_app_glue-d04a14.o
+ .text.android_app_entry
+                0x0000000000004b5c      0x100 /tmp/android_native_app_glue-d04a14.o
+ .text.process_cmd
+                0x0000000000004c5c       0x4c /tmp/android_native_app_glue-d04a14.o
+ .text.process_input
+                0x0000000000004ca8       0x74 /tmp/android_native_app_glue-d04a14.o
+ *(.gnu.warning)
+
+.fini
+ *(SORT(.fini))
+                [!provide]                        PROVIDE (__etext, .)
+                [!provide]                        PROVIDE (_etext, .)
+                [!provide]                        PROVIDE (etext, .)
+
+.rodata         0x0000000000004d1c     0x19a0
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.handle_input
+                0x0000000000004d1c        0x7 /tmp/test-34e97b.o
+ .rodata.handle_cmd
+                0x0000000000004d23        0x6 /tmp/test-34e97b.o
+ .rodata.str1.1
+                0x0000000000004d29      0xf4f /tmp/test-34e97b.o
+                                        0xfaf (size before relaxing)
+ .rodata.config_attribute_list
+                0x0000000000005c78       0x44 /tmp/test-34e97b.o
+ .rodata.context_attribute_list
+                0x0000000000005cbc        0xc /tmp/test-34e97b.o
+ .rodata.RawdrawFontCharMap
+                0x0000000000005cc8      0x200 /tmp/test-34e97b.o
+                0x0000000000005cc8                RawdrawFontCharMap
+ .rodata.RawdrawFontCharData
+                0x0000000000005ec8      0x57d /tmp/test-34e97b.o
+                0x0000000000005ec8                RawdrawFontCharData
+ .rodata.android_app_pre_exec_cmd
+                0x0000000000006445       0x10 /tmp/android_native_app_glue-d04a14.o
+ .rodata.str1.1
+                0x0000000000006455      0x267 /tmp/android_native_app_glue-d04a14.o
+
+.note.android.ident
+                0x00000000000066bc       0x98
+ .note.android.ident
+                0x00000000000066bc       0x98 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000000000007a98                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array
+ *(.preinit_array)
+
+.init_array
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+
+.fini_array     0x0000000000007a98       0x10
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ .fini_array.0  0x0000000000007a98        0x8 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x0000000000007aa0        0x8 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000007aa8        0x8
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000007aa8        0x8 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+                0x0000000000007aa8                __dso_handle
+
+.dynamic        0x0000000000007ab0      0x210
+ *(.dynamic)
+ .dynamic       0x0000000000007ab0      0x210 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+                0x0000000000007ab0                _DYNAMIC
+
+.got            0x0000000000007cc0      0x340
+ *(.got.plt)
+ .got.plt       0x0000000000007cc0      0x320 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ *(.igot.plt)
+ *(.got)
+ .got           0x0000000000007fe0       0x20 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+                0x0000000000007fe0                _GLOBAL_OFFSET_TABLE_
+ *(.igot)
+                0x0000000000008000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x0000000000008000       0x20
+                [!provide]                        PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.window_attribute_list
+                0x0000000000008000        0x4 /tmp/test-34e97b.o
+ .data.wgl_last_width_over_2
+                0x0000000000008004        0x4 /tmp/test-34e97b.o
+ .data.gRDShaderProg
+                0x0000000000008008        0x4 /tmp/test-34e97b.o
+                0x0000000000008008                gRDShaderProg
+ .data.gRDBlitProg
+                0x000000000000800c        0x4 /tmp/test-34e97b.o
+                0x000000000000800c                gRDBlitProg
+ .data.gRDShaderProgUX
+                0x0000000000008010        0x4 /tmp/test-34e97b.o
+                0x0000000000008010                gRDShaderProgUX
+ .data.gRDBlitProgUX
+                0x0000000000008014        0x4 /tmp/test-34e97b.o
+                0x0000000000008014                gRDBlitProgUX
+ .data.gRDBlitProgUT
+                0x0000000000008018        0x4 /tmp/test-34e97b.o
+                0x0000000000008018                gRDBlitProgUT
+ .data.gRDBlitProgTex
+                0x000000000000801c        0x4 /tmp/test-34e97b.o
+                0x000000000000801c                gRDBlitProgTex
+
+.data1
+ *(.data1)
+                0x0000000000008020                _edata = .
+                [!provide]                        PROVIDE (edata, .)
+                0x0000000000008020                __bss_start = .
+                0x0000000000008020                __bss_start__ = .
+
+.bss            0x0000000000008020    0x200e0
+ *(.dynbss)
+ .dynbss        0x0000000000008020        0x0 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.override_android_screen_dimensons
+                0x0000000000008020        0x4 /tmp/test-34e97b.o
+                0x0000000000008020                override_android_screen_dimensons
+ .bss.iLastInternalW
+                0x0000000000008024        0x2 /tmp/test-34e97b.o
+ *fill*         0x0000000000008026        0x2 
+ .bss.iLastInternalH
+                0x0000000000008028        0x2 /tmp/test-34e97b.o
+ *fill*         0x000000000000802a        0x2 
+ .bss.OGLESStarted
+                0x000000000000802c        0x1 /tmp/test-34e97b.o
+ *fill*         0x000000000000802d        0x3 
+ .bss.lastbuttonx
+                0x0000000000008030        0x4 /tmp/test-34e97b.o
+                0x0000000000008030                lastbuttonx
+ .bss.lastbuttony
+                0x0000000000008034        0x4 /tmp/test-34e97b.o
+                0x0000000000008034                lastbuttony
+ .bss.lastmotionx
+                0x0000000000008038        0x4 /tmp/test-34e97b.o
+                0x0000000000008038                lastmotionx
+ .bss.lastmotiony
+                0x000000000000803c        0x4 /tmp/test-34e97b.o
+                0x000000000000803c                lastmotiony
+ .bss.lastbid   0x0000000000008040        0x4 /tmp/test-34e97b.o
+                0x0000000000008040                lastbid
+ .bss.lastmask  0x0000000000008044        0x4 /tmp/test-34e97b.o
+                0x0000000000008044                lastmask
+ .bss.keyboard_up
+                0x0000000000008048        0x4 /tmp/test-34e97b.o
+ .bss.pfd       0x000000000000804c        0x8 /tmp/android_native_app_glue-d04a14.o
+ *(COMMON)
+ *fill*         0x0000000000008054        0x4 
+ COMMON         0x0000000000008058    0x20098 /tmp/test-34e97b.o
+                0x0000000000008058                native_window
+                0x0000000000008060                CNFGDialogColor
+                0x0000000000008064                CNFGPenX
+                0x0000000000008068                android_sdk_version
+                0x000000000000806c                CNFGPenY
+                0x0000000000008070                egl_context
+                0x0000000000008078                egl_surface
+                0x0000000000008080                buttonstate
+                0x0000000000008088                egl_config
+                0x0000000000008090                CNFGVertDataV
+                0x0000000000020090                gRDLastResizeH
+                0x0000000000020094                debugc
+                0x0000000000020098                debuga
+                0x000000000002009c                debugb
+                0x00000000000200a0                CNFGLastColor
+                0x00000000000200a4                lastkey
+                0x00000000000200a8                gRDLastResizeW
+                0x00000000000200b0                egl_display
+                0x00000000000200b8                CNFGBGColor
+                0x00000000000200bc                CNFGVertDataC
+                0x00000000000280bc                lastkeydown
+                0x00000000000280c0                HandleWindowTermination
+                0x00000000000280c8                android_width
+                0x00000000000280cc                CNFGVertPlace
+                0x00000000000280d0                g_objRootView
+                0x00000000000280d8                suspended
+                0x00000000000280dc                android_height
+                0x00000000000280e0                MyFunc
+                0x00000000000280e8                HandleCustomEventCallback
+ COMMON         0x00000000000280f0       0x10 /tmp/android_native_app_glue-d04a14.o
+                0x00000000000280f0                gapp
+                0x00000000000280f8                debug_capture_thread
+                0x0000000000028100                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000028100                _bss_end__ = .
+                0x0000000000028100                __bss_end__ = .
+                0x0000000000028100                . = ALIGN (0x8)
+                0x0000000000028100                . = SEGMENT_START ("ldata-segment", .)
+                0x0000000000028100                . = ALIGN (0x8)
+                0x0000000000028100                __end__ = .
+                0x0000000000028100                _end = .
+                [!provide]                        PROVIDE (end, .)
+                0x0000000000028100                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0xb5
+ *(.comment)
+ .comment       0x0000000000000000       0xb5 /mnt/c/Users/stewa/AppData/Local/Android/Sdk//ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/lib/aarch64-linux-android/30/crtbegin_so.o
+                                         0xb6 (size before relaxing)
+ .comment       0x00000000000000b5       0xb6 /tmp/test-34e97b.o
+ .comment       0x00000000000000b5       0xb6 /tmp/android_native_app_glue-d04a14.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+
+.ARM.attributes
+ *(.ARM.attributes)
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(makecapk/lib/arm64-v8a/libcnfgtest.so elf64-littleaarch64)
