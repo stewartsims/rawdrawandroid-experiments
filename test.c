@@ -101,6 +101,10 @@ struct VisualPosition {
   int y;
 };
 
+//extend rawdraw with fancy rounded corners
+void drawBox( short topLeftCornerX, short topLeftCornerY, short bottomRightCornerX, short bottomRightCornerY, int borderRadius );
+void drawRectangle( short topLeftCornerX, short topLeftCornerY, short bottomRightCornerX, short bottomRightCornerY, int borderRadius );
+
 //drawing notes
 void drawNoteTile( int x, int y, int height, int width, struct Note note);
 struct VisualPosition calcVisualNotePosition( int position );
@@ -120,6 +124,45 @@ void drawButton( int x, int y, char* buttonText, void (*action)() );
 //add note function
 void addNotePressed();
 
+void drawBox( short topLeftCornerX, short topLeftCornerY, short bottomRightCornerX, short bottomRightCornerY, int borderRadius ) {
+	uint32_t lc = CNFGLastColor;
+	CNFGColor( lc );
+	drawRectangle( topLeftCornerX, topLeftCornerY, bottomRightCornerX, bottomRightCornerY, borderRadius );
+}
+
+void drawRectangle( short topLeftCornerX, short topLeftCornerY, short bottomRightCornerX, short bottomRightCornerY, int borderRadius ) {
+	int f, ddF_x, ddF_y, xx, yy;
+	
+	f = 1 - borderRadius;
+	ddF_x = 1;
+	ddF_y = -2 * borderRadius;
+	xx = 0;
+	yy = borderRadius;
+	
+	while(xx < yy) {
+		if (f >= 0) {
+			yy-=1;
+			ddF_y += 2;
+			f += ddF_y;
+		}
+		xx+=1;
+		ddF_x += 2;
+		f += ddF_x;
+		CNFGTackPixel(bottomRightCornerX + xx - borderRadius, bottomRightCornerY + yy - borderRadius);
+		CNFGTackPixel(bottomRightCornerX + yy - borderRadius, bottomRightCornerY + xx - borderRadius);
+		CNFGTackPixel(topLeftCornerX - xx + borderRadius, bottomRightCornerY + yy - borderRadius);
+		CNFGTackPixel(topLeftCornerX - yy + borderRadius, bottomRightCornerY + xx - borderRadius);
+		CNFGTackPixel(bottomRightCornerX + xx - borderRadius, topLeftCornerY - yy + borderRadius);
+		CNFGTackPixel(bottomRightCornerX + yy - borderRadius, topLeftCornerY - xx + borderRadius);
+		CNFGTackPixel(topLeftCornerX - xx + borderRadius, topLeftCornerY - yy + borderRadius);
+		CNFGTackPixel(topLeftCornerX - yy + borderRadius, topLeftCornerY - xx + borderRadius);
+	}
+	CNFGTackSegment(topLeftCornerX + borderRadius, topLeftCornerY, bottomRightCornerX - borderRadius, topLeftCornerY); // top side
+	CNFGTackSegment(topLeftCornerX + borderRadius, bottomRightCornerY, bottomRightCornerX - borderRadius, bottomRightCornerY); // bottom side
+	CNFGTackSegment(topLeftCornerX, topLeftCornerY+borderRadius, topLeftCornerX, bottomRightCornerY-borderRadius); // left side
+	CNFGTackSegment(bottomRightCornerX, topLeftCornerY+borderRadius, bottomRightCornerX, bottomRightCornerY-borderRadius); // right side
+}
+
 void drawButton( int buttonCentreX, int buttonCentreY, char* text, void (*action)() ) {
 	// get size of text
 	int textWidth, textHeight;
@@ -128,8 +171,8 @@ void drawButton( int buttonCentreX, int buttonCentreY, char* text, void (*action
 	int topLeftCornerY = buttonCentreY - (textHeight / 2) - 20;
 	int bottomRightCornerX = buttonCentreX + (textWidth / 2) + 20;
 	int bottomRightCornerY = buttonCentreY + (textHeight / 2) + 20;
-	CNFGDrawBox( topLeftCornerX, topLeftCornerY, bottomRightCornerX, bottomRightCornerY );
-	CNFGPenX = topLeftCornerX + 20; CNFGPenY = topLeftCornerY + 20;
+	drawBox( topLeftCornerX, topLeftCornerY, bottomRightCornerX, bottomRightCornerY, 15 );
+	CNFGPenX = topLeftCornerX + 20; CNFGPenY = topLeftCornerY + 30;
 	CNFGDrawText( text, 20 );
 }
 
