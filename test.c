@@ -39,11 +39,26 @@ int lastkey, lastkeydown;
 static int keyboard_up;
 uint8_t buttonstate[8];
 
+struct Pressable {
+	int id;
+	int topLeftCornerX;
+	int topLeftCornerY;
+	int bottomRightCornerX;
+	int bottomRightCornerY;
+	void (*action)();
+};
+
+int pressableCount = 0;
+struct Pressable pressables[30];
+
+int is_inside( int pointX, int pointY, int topLeftCornerX, int topLeftCornerY, int bottomRightCornerX, int bottomRightCornerY );
+void checkPress( struct Pressable* pressable );
+
 void HandleKey( int keycode, int bDown )
 {
 	lastkey = keycode;
 	lastkeydown = bDown;
-	if( keycode == 10 && !bDown ) { keyboard_up = 0; AndroidDisplayKeyboard( keyboard_up );  }
+	//if( keycode == 10 && !bDown ) { keyboard_up = 0; AndroidDisplayKeyboard( keyboard_up );  }
 
 	if( keycode == 4 ) { AndroidSendToBack( 1 ); } //Handle Physical Back Button.
 }
@@ -55,7 +70,26 @@ void HandleButton( int x, int y, int button, int bDown )
 	lastbuttonx = x;
 	lastbuttony = y;
 
-	if( bDown ) { keyboard_up = !keyboard_up; AndroidDisplayKeyboard( keyboard_up ); }
+	//if( bDown ) { keyboard_up = !keyboard_up; AndroidDisplayKeyboard( keyboard_up ); }
+	if (bDown) { 
+	    for (int i = 0; i < pressableCount; i++) {
+			checkPress(&pressables[i]);
+		}
+	}
+}
+
+void checkPress( struct Pressable* pressable ) {
+	if (is_inside(lastbuttonx, lastbuttony, pressable->topLeftCornerX, pressable->topLeftCornerY, pressable->bottomRightCornerX, pressable->bottomRightCornerY)) {
+		pressable->action();
+	}
+}
+
+int is_inside ( int pointX, int pointY, int topLeftCornerX, int topLeftCornerY, int bottomRightCornerX, int bottomRightCornerY )
+{
+	return ((pointX >= topLeftCornerX ) &&
+	(pointX <= bottomRightCornerX) &&
+	(pointY >= topLeftCornerY ) &&
+	(pointY <= bottomRightCornerY));
 }
 
 void HandleMotion( int x, int y, int mask )
@@ -119,7 +153,7 @@ void closeNotePopup();
 void drawTextField( int x, int y, char* label );
 void drawTextArea( int x, int y, char* label );
 void drawLabel( int x, int y, int size );
-void drawButton( int x, int y, char* buttonText, void (*action)() );
+int drawButton( int x, int y, char* buttonText, void (*action)(), int buttonId );
 
 //add note function
 void addNotePressed();
@@ -163,21 +197,39 @@ void drawRectangle( short topLeftCornerX, short topLeftCornerY, short bottomRigh
 	CNFGTackSegment(bottomRightCornerX, topLeftCornerY+borderRadius, bottomRightCornerX, bottomRightCornerY-borderRadius); // right side
 }
 
-void drawButton( int buttonCentreX, int buttonCentreY, char* text, void (*action)() ) {
+int drawButton( int buttonCentreX, int buttonCentreY, char* text, void (*action)(), int buttonId ) {
 	// get size of text
 	int textWidth, textHeight;
 	CNFGGetTextExtents( text, &textWidth, &textHeight, 20 );
+	// draw button outline
 	int topLeftCornerX = buttonCentreX - (textWidth / 2) - 20;
 	int topLeftCornerY = buttonCentreY - (textHeight / 2) - 20;
 	int bottomRightCornerX = buttonCentreX + (textWidth / 2) + 20;
 	int bottomRightCornerY = buttonCentreY + (textHeight / 2) + 20;
 	drawBox( topLeftCornerX, topLeftCornerY, bottomRightCornerX, bottomRightCornerY, 15 );
+	// write text
 	CNFGPenX = topLeftCornerX + 20; CNFGPenY = topLeftCornerY + 30;
 	CNFGDrawText( text, 20 );
+	//TODO
+	// attach action function
+	int pressableIndex = pressableCount;
+	pressables[pressableIndex].id = pressableCount+1;
+	pressables[pressableIndex].topLeftCornerX = topLeftCornerX;
+	pressables[pressableIndex].topLeftCornerY = topLeftCornerY;
+	pressables[pressableIndex].bottomRightCornerX = bottomRightCornerX;
+	pressables[pressableIndex].bottomRightCornerY = bottomRightCornerY;
+	pressables[pressableIndex].action = addNotePressed;
+	if ( buttonId == 0 ) {
+		pressableCount++;
+	}
+	buttonId = pressables[pressableIndex].id;
+	return buttonId;
 }
 
+int debugAddNotePressed = 0;
 void addNotePressed() {
 	//TODO
+	debugAddNotePressed++;
 }
 
 #define ADD_BUTTON_LABEL "+Add Note"
@@ -185,6 +237,7 @@ void addNotePressed() {
 int main( int argc, char ** argv )
 {
 	CNFGSetupFullscreen( "Notes app", 0 );
+	int addButtonId = 0;
 	while(CNFGHandleInput())
 	{
 		CNFGBGColor = 0xffffffff;
@@ -207,7 +260,13 @@ int main( int argc, char ** argv )
 		// place button in centre and slightly up from the bottom
 		int addButtonX = screenCentre;
 		int addButtonY = screenBottom - addButtonTextHeight - 10;
-		drawButton( addButtonX, addButtonY, "+Add Note", addNotePressed );
+		addButtonId = drawButton( addButtonX, addButtonY, "+Add Note", addNotePressed, addButtonId );
+		
+		// debug text
+		char debug[25];
+		sprintf( debug, "debugAddNotePressed: %i\n", debugAddNotePressed);
+		CNFGPenX = 100; CNFGPenY = 100;
+		CNFGDrawText( debug, 10 );
 		
 		CNFGSwapBuffers();		
 	}
