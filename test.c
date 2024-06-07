@@ -83,9 +83,52 @@ void HandleResume()
 	suspended = 0;
 }
 
+struct Notes {
+  Note[] notes;
+};
+
+struct Note {
+  int position;
+  char[] title;
+  char[] text;
+  char[] dateTime;  
+};
+
+struct VisualPosition {
+  int x;
+  int y;
+};
+
+//drawing notes
+void drawNoteTile( int x, int y, int height, int width, struct note);
+VisualPosition calcVisualNotePosition( int position );
+
+//adding / removing notes
+void deleteNoteTile( int position );
+void addNoteTile( struct note );
+
+//note editor popup
+void drawNotePopup( Note note );
+void closeNotePopup();
+void drawTextField( int x, int y, char[] label );
+void drawTextArea( int x, int y, char[] label );
+void drawLabel( int x, int y, int size );
+void drawButton( int x, int y, char[] buttonText, void (*f)() action );
+
+//add note function
+void addNotePressed();
+
+void drawButton() {
+	//TODO
+}
+
+void addNotePressed() {
+	//TODO
+}
+
 int main( int argc, char ** argv )
 {
-	CNFGSetupFullscreen( "Test Bench", 0 );
+	CNFGSetupFullscreen( "Notes app", 0 );
 	while(CNFGHandleInput())
 	{
 		CNFGBGColor = 0xffffffff;
@@ -93,7 +136,16 @@ int main( int argc, char ** argv )
 		CNFGColor( 0x000080ff ); 
 		CNFGPenX = 1; CNFGPenY = 1;
 		CNFGSetLineWidth( 5 );
-		CNFGDrawText( "Hello, World!", 20 );
+		CNFGDrawText( "WRITE SOME NOTES", 20 );
+		
+		//draw add button
+		//TODO
+		// get size of text
+		// find bottom and centre of screen
+		// set addButtonX = centre of screen - half of size of text
+		// set addButtonY = bottom of screen - 10 pixels
+		//drawButton( addButtonX, addButtonY, "+Add Note", addNotePressed);
+		
 		CNFGSwapBuffers();		
 	}
 }
