@@ -83,15 +83,17 @@ void HandleResume()
 	suspended = 0;
 }
 
+struct Note;
+
 struct Notes {
-  Note[] notes;
+  struct Note* notes;
 };
 
 struct Note {
   int position;
-  char[] title;
-  char[] text;
-  char[] dateTime;  
+  char* title;
+  char* text;
+  char* dateTime;  
 };
 
 struct VisualPosition {
@@ -100,31 +102,42 @@ struct VisualPosition {
 };
 
 //drawing notes
-void drawNoteTile( int x, int y, int height, int width, struct note);
-VisualPosition calcVisualNotePosition( int position );
+void drawNoteTile( int x, int y, int height, int width, struct Note note);
+struct VisualPosition calcVisualNotePosition( int position );
 
 //adding / removing notes
 void deleteNoteTile( int position );
-void addNoteTile( struct note );
+void addNoteTile( struct Note note );
 
 //note editor popup
-void drawNotePopup( Note note );
+void drawNotePopup( struct Note note );
 void closeNotePopup();
-void drawTextField( int x, int y, char[] label );
-void drawTextArea( int x, int y, char[] label );
+void drawTextField( int x, int y, char* label );
+void drawTextArea( int x, int y, char* label );
 void drawLabel( int x, int y, int size );
-void drawButton( int x, int y, char[] buttonText, void (*f)() action );
+void drawButton( int x, int y, char* buttonText, void (*action)() );
 
 //add note function
 void addNotePressed();
 
-void drawButton() {
-	//TODO
+void drawButton( int buttonCentreX, int buttonCentreY, char* text, void (*action)() ) {
+	// get size of text
+	int textWidth, textHeight;
+	CNFGGetTextExtents( text, &textWidth, &textHeight, 20 );
+	int topLeftCornerX = buttonCentreX - (textWidth / 2) - 20;
+	int topLeftCornerY = buttonCentreY - (textHeight / 2) - 20;
+	int bottomRightCornerX = buttonCentreX + (textWidth / 2) + 20;
+	int bottomRightCornerY = buttonCentreY + (textHeight / 2) + 20;
+	CNFGDrawBox( topLeftCornerX, topLeftCornerY, bottomRightCornerX, bottomRightCornerY );
+	CNFGPenX = topLeftCornerX + 20; CNFGPenY = topLeftCornerY + 20;
+	CNFGDrawText( text, 20 );
 }
 
 void addNotePressed() {
 	//TODO
 }
+
+#define ADD_BUTTON_LABEL "+Add Note"
 
 int main( int argc, char ** argv )
 {
@@ -138,13 +151,20 @@ int main( int argc, char ** argv )
 		CNFGSetLineWidth( 5 );
 		CNFGDrawText( "WRITE SOME NOTES", 20 );
 		
-		//draw add button
-		//TODO
+		// draw add button
 		// get size of text
+		int addButtonTextWidth, addButtonTextHeight;
+		CNFGGetTextExtents( ADD_BUTTON_LABEL, &addButtonTextWidth, &addButtonTextHeight, 20 );
 		// find bottom and centre of screen
-		// set addButtonX = centre of screen - half of size of text
-		// set addButtonY = bottom of screen - 10 pixels
-		//drawButton( addButtonX, addButtonY, "+Add Note", addNotePressed);
+		int screenBottom, screenCentre;
+		short screenWidth, screenHeight;
+		CNFGGetDimensions( &screenWidth, &screenHeight );
+		screenBottom = screenHeight;
+		screenCentre = screenWidth / 2;
+		// place button in centre and slightly up from the bottom
+		int addButtonX = screenCentre;
+		int addButtonY = screenBottom - addButtonTextHeight - 10;
+		drawButton( addButtonX, addButtonY, "+Add Note", addNotePressed );
 		
 		CNFGSwapBuffers();		
 	}
